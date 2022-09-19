@@ -3,3 +3,5 @@
 	email = 38709696+SomeDebris@users.noreply.github.com
 [core]
 	editor = vim
+[alias]
+	loggraph = log --decorate --oneline --graph
