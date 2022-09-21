@@ -7,7 +7,7 @@
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
-"runtime! debian.vim
+runtime! debian.vim
 
 " Vim will load $VIMRUNTIME/defaults.vim if the user does not have a vimrc.
 " This happens after /etc/vim/vimrc(.local) are loaded, so it will override
@@ -94,8 +94,8 @@ nnoremap <silent> [<space>  :<c-u>put!=repeat([''],v:count)<bar>']+1<cr>
 nnoremap <silent> ]<space>  :<c-u>put =repeat([''],v:count)<bar>'[-1<cr>
 
 " Save a view or something.
-autocmd BufWinLeave ?* mkview!
-autocmd BufWinEnter ?* silent loadview
+"autocmd BufWinLeave * mkview
+"autocmd BufWinEnter * silent loadview
 
 set viewoptions-=options
 
