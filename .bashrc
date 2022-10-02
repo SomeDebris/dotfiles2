@@ -13,7 +13,7 @@ fi
 export PATH
 
 # set editor to vim all the time
-EDITOR=/usr/bin/vim
+EDITOR=/data/data/com.termux/files/usr/bin/vim
 export EDITOR
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
