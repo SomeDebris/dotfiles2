@@ -5,3 +5,7 @@
 	editor = vim
 [alias]
 	loggraph = log --decorate --oneline --graph
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
