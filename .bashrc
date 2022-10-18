@@ -31,3 +31,5 @@ fi
 unset rc
 
 . "$HOME/.cargo/env"
+
+. ~/.bash_completion/alacritty
