@@ -33,3 +33,6 @@ unset rc
 . "$HOME/.cargo/env"
 
 . ~/.bash_completion/alacritty
+
+# aliases that are nice
+alias ls='ls --color=auto'
