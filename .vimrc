@@ -129,4 +129,7 @@ call plug#begin()
 
   Plug 'tpope/vim-commentary'
 
+  Plug 'preservim/nerdtree'
+  "Plug 'francoiscabrol/ranger.vim'
+
 call plug#end()
