@@ -126,7 +126,7 @@ call plug#begin()
  " Plug 'https://github.com/ycm-core/YouCompleteMe'
 
   Plug 'tpope/vim-fugitive'
-
+  Plug 'https://github.com/tpope/vim-surround.git'
   Plug 'tpope/vim-commentary'
 
   Plug 'preservim/nerdtree'
