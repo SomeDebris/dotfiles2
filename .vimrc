@@ -25,6 +25,7 @@ set nocompatible
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
 syntax on
+syntax enable
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
@@ -119,17 +120,20 @@ call plug#begin()
 
   Plug 'gregjurman/vim-nc'
 
-  "Plug 'tbastos/vim-lua'
+" Plug 'tbastos/vim-lua'
 
-  "Plug 'sudar/vim-arduino-syntax'
+" Plug 'sudar/vim-arduino-syntax'
 
- " Plug 'https://github.com/ycm-core/YouCompleteMe'
+" Plug 'https://github.com/ycm-core/YouCompleteMe'
 
   Plug 'tpope/vim-fugitive'
   Plug 'https://github.com/tpope/vim-surround.git'
   Plug 'tpope/vim-commentary'
 
   Plug 'preservim/nerdtree'
-  "Plug 'francoiscabrol/ranger.vim'
+" Plug 'francoiscabrol/ranger.vim'
+
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'airblade/vim-gitgutter'
 
 call plug#end()
