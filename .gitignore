@@ -1,8 +1,8 @@
 *.netrwhist
-.vim/view
-.vim/plugged
+.vim/view/*
+.vim/plugged/*
 .vim/autoload/plug.vim
 
-.config
-!.config/alacritty
-!.config/obs-studio/basic
+.config/*
+!.config/alacritty/*
+!.config/obs-studio/basic/*
