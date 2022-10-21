@@ -4,4 +4,5 @@
 .vim/autoload/plug.vim
 
 !.config/alacritty
+!.config/obs-studio/basic/
 .config
