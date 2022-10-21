@@ -3,6 +3,6 @@
 .vim/plugged
 .vim/autoload/plug.vim
 
-!.config/alacritty
-!.config/obs-studio/basic/
 .config
+!.config/alacritty
+!.config/obs-studio/basic
