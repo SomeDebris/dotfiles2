@@ -94,8 +94,8 @@ nnoremap <silent> [<space>  :<c-u>put!=repeat([''],v:count)<bar>']+1<cr>
 nnoremap <silent> ]<space>  :<c-u>put =repeat([''],v:count)<bar>'[-1<cr>
 
 " Save a view or something.
-"autocmd BufWinLeave * mkview
-"autocmd BufWinEnter * silent loadview
+au BufWritePost,BufLeave,WinLeave ?* mkview
+au BufWinEnter ?* silent loadview
 
 set viewoptions-=options
 
