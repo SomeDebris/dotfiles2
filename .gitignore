@@ -2,3 +2,6 @@
 .vim/view
 .vim/plugged
 .vim/autoload/plug.vim
+
+!.config/alacritty
+.config
