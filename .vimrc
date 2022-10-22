@@ -32,7 +32,7 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 
-colorscheme industry
+colorscheme super-awesome
 
 set wildmenu
 
@@ -107,3 +107,5 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
 
 call plug#end()
+
+colorscheme solarized
