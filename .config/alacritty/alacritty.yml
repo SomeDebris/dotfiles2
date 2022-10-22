@@ -22,8 +22,10 @@ schemes:
   solarized_dark: &sdark
     # Default colors
     primary:
-      background: '#002b36' # base03
+      #background: '#002b36' # base03
+      background: '#171421' # from gnome terminal
       foreground: '#839496' # base0
+      bright_foreground: '#ffffff'
 
     # Cursor colors
     cursor:
