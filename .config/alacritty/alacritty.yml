@@ -84,3 +84,8 @@ schemes:
       white:   '#ffffff'
 
 colors: *sdark
+
+window:
+  dimensions:
+    columns: 100
+    lines: 25
