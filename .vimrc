@@ -61,6 +61,10 @@ if has("gui_running")
     set guifont=Hack\ 16
 endif
 
+if &term == 'alacritty'
+    set ttymouse=sgr
+endif
+
 "let &showbreak = '↪ '
 let &showbreak = '>'
 
@@ -93,6 +97,8 @@ endif
 call plug#begin()
 
   Plug 'gregjurman/vim-nc'
+
+  Plug 'vim-latex/vim-latex'
 
 " Plug 'tbastos/vim-lua'
 
