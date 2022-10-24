@@ -57,6 +57,10 @@ set linebreak
 
 set number
 
+if has("gui_running")
+    set guifont=Hack\ 16
+endif
+
 "let &showbreak = '↪ '
 let &showbreak = '>'
 
