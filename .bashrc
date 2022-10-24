@@ -30,9 +30,11 @@ fi
 
 unset rc
 
-. "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi
 
-. ~/.bash_completion/alacritty
+. "$HOME/.bash_completion/alacritty"
 
 # aliases that are nice
 alias ls='ls --color=auto'
