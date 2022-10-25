@@ -186,7 +186,7 @@ bar {
 }
 
 # Keyboard delay settings
-exec --no-startup-id xset r rate 250 25
+exec --no-startup-id xset r rate 250 10
 
 # change screen resolution
 exec xrandr --output DP-0 --mode 5120x2160

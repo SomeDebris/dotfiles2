@@ -12,3 +12,9 @@
 
 !.config/i3
 !.config/sway
+
+.local/*
+!.local/bin
+.local/bin/*
+!.local/bin/discord-flatpak
+!.local/bin/tauon-mb-flatpak
