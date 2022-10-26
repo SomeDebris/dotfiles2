@@ -93,4 +93,4 @@ window:
 bell:
   command: 
     program: aplay
-    args: ["/home/magnus/Music/SFX/world/sg/sg_02.wav"]
+    args: ["/home/magnus/.config/alacritty/termbeep.wav"]
