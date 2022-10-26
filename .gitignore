@@ -18,3 +18,4 @@
 .local/bin/*
 !.local/bin/discord-flatpak
 !.local/bin/tauon-mb-flatpak
+!.local/bin/resolve
