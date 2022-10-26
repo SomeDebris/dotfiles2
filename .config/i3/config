@@ -152,7 +152,7 @@ assign [class="resolve"] number $ws5
 assign [class="discord"] number $ws7
 assign [class="Slack"] number $ws7
 
-bindsym $mod+t floating toggle, resize set width 1920 px, resize set height 1080 px
+bindsym $mod+t floating toggle, border none, resize set width 1920 px, resize set height 1080 px
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
