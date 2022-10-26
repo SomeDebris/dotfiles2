@@ -150,6 +150,7 @@ assign [class="GNU Octave"] number $ws2
 assign [class="Blender"] number $ws6
 assign [class="resolve"] number $ws5
 assign [class="discord"] number $ws7
+assign [class="Slack"] number $ws7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
