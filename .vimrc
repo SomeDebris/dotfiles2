@@ -38,6 +38,8 @@ set wildmenu
 
 set hls     " highlights the last search pattern. useful!
 
+highlight Comment cterm=italic gui=italic
+
 set path+=**  " Provides tab-completion for all file related tasks
 set directory=.,~/tmp//
 
