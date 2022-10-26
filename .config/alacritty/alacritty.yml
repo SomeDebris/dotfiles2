@@ -89,3 +89,8 @@ window:
   dimensions:
     columns: 100
     lines: 25
+
+bell:
+  command: 
+    program: aplay
+    args: ["/home/magnus/Music/SFX/world/sg/sg_02.wav"]
