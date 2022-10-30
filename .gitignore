@@ -12,6 +12,7 @@
 
 !.config/i3
 !.config/sway
+!.config/fish
 
 .local/*
 !.local/bin
@@ -19,3 +20,4 @@
 !.local/bin/discord-flatpak
 !.local/bin/tauon-mb-flatpak
 !.local/bin/resolve
+
