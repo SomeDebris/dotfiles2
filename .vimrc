@@ -97,25 +97,24 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
+    
+    Plug 'gregjurman/vim-nc'
+    Plug 'vim-latex/vim-latex'
+    Plug 'vim-python/python-syntax'
+    "Plug 'tbastos/vim-lua'
 
-  Plug 'gregjurman/vim-nc'
+    "Plug 'sudar/vim-arduino-syntax'
 
-  Plug 'vim-latex/vim-latex'
+    "Plug 'https://github.com/ycm-core/YouCompleteMe'
 
-" Plug 'tbastos/vim-lua'
+    Plug 'tpope/vim-fugitive'
+    Plug 'https://github.com/tpope/vim-surround.git'
+    Plug 'tpope/vim-commentary'
 
-" Plug 'sudar/vim-arduino-syntax'
+    Plug 'preservim/nerdtree'
+    "Plug 'francoiscabrol/ranger.vim'
 
-" Plug 'https://github.com/ycm-core/YouCompleteMe'
-
-  Plug 'tpope/vim-fugitive'
-  Plug 'https://github.com/tpope/vim-surround.git'
-  Plug 'tpope/vim-commentary'
-
-  Plug 'preservim/nerdtree'
-" Plug 'francoiscabrol/ranger.vim'
-
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'airblade/vim-gitgutter'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'airblade/vim-gitgutter'
 
 call plug#end()
