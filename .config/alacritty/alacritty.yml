@@ -5,6 +5,9 @@ font:
     family: Hack
   size: 16
 
+shell:
+  program: fish
+
 # Colors (Solarized Dark)
 schemes:
   solarized_dark: &sdark
