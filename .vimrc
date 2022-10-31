@@ -67,7 +67,7 @@ if &term == 'alacritty'
     set ttymouse=sgr
 endif
 
-"let &showbreak = '↪ '
+"let &showbreak = ' '
 let &showbreak = '>'
 
 " Maps [<space> to create line above cursor
@@ -104,8 +104,6 @@ call plug#begin()
     "Plug 'tbastos/vim-lua'
 
     "Plug 'sudar/vim-arduino-syntax'
-
-    "Plug 'https://github.com/ycm-core/YouCompleteMe'
 
     Plug 'tpope/vim-fugitive'
     Plug 'https://github.com/tpope/vim-surround.git'
