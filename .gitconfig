@@ -11,3 +11,5 @@
 	rebase = false
 [svn]
 	rmdir = true
+[merge]
+	tool = vimdiff
