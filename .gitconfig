@@ -1,6 +1,7 @@
 [user]
 	name = Magnus Ramsey
 	email = 38709696+SomeDebris@users.noreply.github.com
+    signingkey = AEF3DB1AF82DF8BF
 [core]
 	editor = vim
 [alias]
@@ -13,3 +14,7 @@
 	rmdir = true
 [merge]
 	tool = vimdiff
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
