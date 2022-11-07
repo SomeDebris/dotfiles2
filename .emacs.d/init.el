@@ -9,10 +9,6 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
-(require 'evil)
-(evil-mode t)
-(evil-set-initial-state 'Custom-mode 'normal)
-
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -25,13 +21,24 @@
 (use-package magit
   :ensure t)
 (use-package evil
-  :ensure t)
+  :ensure t
+  :init
+  (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
+  (setq evil-want-keybinding nil)
+  :config
+  (evil-mode 1))
 (use-package solarized-theme
   :ensure t)
 (use-package helm
   :ensure t)
 (use-package evil-commentary
   :ensure t)
+(use-package evil-collection
+  :ensure t)
+
+(require 'evil)
+(evil-mode t)
+(evil-set-initial-state 'Custom-mode 'normal)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -48,4 +55,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
+   '(evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
+
+(evil-collection-init '(magit calendar calc ediff))
