@@ -55,6 +55,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
+   '(undo-fu undo-tree evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
 
-(evil-collection-init '(magit calendar calc ediff))
+(evil-collection-init '(magit calendar calc ediff dired))
+
+(setq path-to-ctags "/usr/bin/ctags")
+
+(defun create-ctags (dir-name)
+  "Create tags file."
+  (interactive "Directory: ")
+  (shell-command
+   (format "%s -f TAGS -e -R %s" path-to-ctags (directory-file-name dir-name)))
+)	
