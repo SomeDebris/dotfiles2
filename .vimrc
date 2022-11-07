@@ -112,6 +112,7 @@ call plug#begin()
     Plug 'tpope/vim-commentary'
 
     Plug 'preservim/nerdtree'
+    "Plug 'tpope/vim-vinegar'
     "Plug 'francoiscabrol/ranger.vim'
 
     Plug 'altercation/vim-colors-solarized'
