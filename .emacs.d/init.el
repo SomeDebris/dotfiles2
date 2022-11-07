@@ -57,7 +57,7 @@
  '(package-selected-packages
    '(undo-fu undo-tree evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
 
-(evil-collection-init '(magit calendar calc ediff dired))
+(evil-collection-init '(magit calendar calc ediff dired org undo))
 
 (setq path-to-ctags "/usr/bin/ctags")
 
