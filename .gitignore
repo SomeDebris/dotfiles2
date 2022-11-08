@@ -22,6 +22,9 @@
 .config/nvim/*
 !.config/nvim/init.vim
 
+.emacs.d/*
+!.emacs.d/init.el
+
 .local/*
 !.local/bin
 .local/bin/*
