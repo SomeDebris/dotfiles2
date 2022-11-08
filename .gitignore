@@ -18,6 +18,10 @@
 .config/FreeCAD/*
 !.config/FreeCAD/user.cfg
 
+!.config/nvim
+.config/nvim/*
+!.config/nvim/init.vim
+
 .local/*
 !.local/bin
 .local/bin/*
