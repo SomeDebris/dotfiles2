@@ -1,6 +1,3 @@
-syntax on
-syntax enable
-
 "au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 filetype plugin indent on
@@ -116,3 +113,6 @@ call plug#begin()
     Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
 call plug#end()
+
+syntax on
+syntax enable
