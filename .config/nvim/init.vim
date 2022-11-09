@@ -11,6 +11,10 @@ set smartcase
 set autowrite
 set mouse=a
 
+" python configuration
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
 set backspace=indent,eol,start 
 
 if filereadable("/etc/vim/vimrc.local")
@@ -104,4 +108,5 @@ call plug#begin()
     Plug 'airblade/vim-gitgutter'
 
     Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
 call plug#end()
