@@ -21,6 +21,9 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+"industry-nvim is my custom thing based on the vim9 one
+colorscheme industry-nvim
+
 " TABS TO SPACES:
 set tabstop=4
 set shiftwidth=4
@@ -109,4 +112,7 @@ call plug#begin()
 
     Plug 'neovim/nvim-lspconfig'
     Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+    Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+
 call plug#end()
