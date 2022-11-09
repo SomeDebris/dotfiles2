@@ -108,5 +108,5 @@ call plug#begin()
     Plug 'airblade/vim-gitgutter'
 
     Plug 'neovim/nvim-lspconfig'
-    Plug 'nvim-lua/completion-nvim'
+    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 call plug#end()
