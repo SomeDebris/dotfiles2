@@ -27,6 +27,9 @@
 !.emacs.d/init.el
 
 .srb2/logs/*
+.srb2/DOWNLOAD/*
+.srb2/addons/*
+.srb2/crash-log.txt
 
 .local/*
 !.local/bin
