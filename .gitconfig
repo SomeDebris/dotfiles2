@@ -3,7 +3,7 @@
 	email = 38709696+SomeDebris@users.noreply.github.com
     signingkey = AEF3DB1AF82DF8BF
 [core]
-	editor = vim
+	editor = nvim
 [alias]
 	loggraph = log --decorate --oneline --graph
 [init]
