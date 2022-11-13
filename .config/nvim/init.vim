@@ -18,8 +18,7 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-"industry-nvim is my custom thing based on the vim9 one
-colorscheme industry-nvim
+" set termguicolors
 
 " TABS TO SPACES:
 set tabstop=4
@@ -114,5 +113,5 @@ call plug#begin()
 
 call plug#end()
 
-syntax on
-syntax enable
+"industry-nvim is my custom thing based on the vim9 one
+colorscheme industry-nvim
