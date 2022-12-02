@@ -73,3 +73,5 @@
   (shell-command
    (format "%s -f TAGS -e -R %s" path-to-ctags (directory-file-name dir-name)))
 )	
+
+(global-undo-tree-mode)
