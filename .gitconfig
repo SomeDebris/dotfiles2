@@ -1,7 +1,6 @@
 [user]
 	name = Magnus Ramsey
 	email = 38709696+SomeDebris@users.noreply.github.com
-    signingkey = AEF3DB1AF82DF8BF
 [core]
 	editor = nvim
 [alias]
@@ -9,7 +8,7 @@
 [init]
 	defaultBranch = main
 [pull]
-	rebase = false
+	rebase = true
 [svn]
 	rmdir = true
 [merge]
