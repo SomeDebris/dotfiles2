@@ -16,6 +16,8 @@
 (eval-when-compile
   (require 'use-package))
 
+(setq evil-undo-system 'undo-tree)
+
 (use-package markdown-mode
   :ensure t)
 (use-package magit
@@ -39,10 +41,16 @@
   :ensure t)
 (use-package undo-fu
   :ensure t)
+(use-package tex
+  :ensure auctex)
 
 (require 'evil)
 (evil-mode t)
 (evil-set-initial-state 'Custom-mode 'normal)
+
+(require 'undo-tree)
+(global-undo-tree-mode)
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -59,13 +67,16 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
-   '("/home/magnus/Documents/college-notes/AE-200_STATICS.org" "/home/magnus/Documents/college-notes/DBF.org" "/home/magnus/Documents/college-notes/PERSONAL.org" "/home/magnus/Documents/college-notes/ENGL-157_ENGLISH.org" "/home/magnus/Documents/college-notes/PHYS-196_PHYSICS.org"))
+   '("/home/magnus/Documents/college-notes/DBF.org" "/home/magnus/Documents/college-notes/AE-220-DYNAMICS.org" "/home/magnus/Documents/college-notes/PERSONAL.org"))
  '(package-selected-packages
-   '(lua-mode undo-fu undo-tree evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
+   '(auto-complete-auctex auto-complete ghost-blog pdf-tools auctex-lua auctex lua-mode undo-fu undo-tree evil-collection evil-commentary helm markdown-mode use-package solarized-theme magit evil)))
 
-(evil-collection-init '(magit calendar calc ediff dired org undo eww))
+(evil-collection-init '(magit calendar calc ediff dired org undo eww auctex))
 
 (setq path-to-ctags "/usr/bin/ctags")
+
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
 
 (defun create-ctags (dir-name)
   "Create tags file."
@@ -74,4 +85,3 @@
    (format "%s -f TAGS -e -R %s" path-to-ctags (directory-file-name dir-name)))
 )	
 
-(global-undo-tree-mode)

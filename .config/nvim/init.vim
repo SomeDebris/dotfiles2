@@ -111,7 +111,13 @@ call plug#begin()
     Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
+    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
 
 "industry-nvim is my custom thing based on the vim9 one
 colorscheme industry-nvim
+
+let g:livepreview_engine = 'lualatex'
