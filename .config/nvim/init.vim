@@ -62,8 +62,10 @@ nnoremap <silent> [<space>  :<c-u>put!=repeat([''],v:count)<bar>']+1<cr>
 nnoremap <silent> ]<space>  :<c-u>put =repeat([''],v:count)<bar>'[-1<cr>
 
 " Save a view or something.
-autocmd BufWritePost,BufLeave,WinLeave ?* mkview
-autocmd BufReadPre,BufWinEnter ?* silent! loadview
+" autocmd BufWritePost,BufLeave,WinLeave ?* mkview
+" autocmd BufReadPre,BufWinEnter ?* silent! loadview
+au BufWritePost,BufLeave,WinLeave ?* mkview
+au BufWinEnter ?* silent! loadview
 
 set viewoptions-=options
 
@@ -76,6 +78,21 @@ let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
 
+let g:vimtex_view_general_viewer = 'evince'
+" let g:vimtex_compiler_method = 'lualatex'
+let g:vimtex_compiler_latexmk_engines = {
+        \ '_'                : '-lualatex',
+        \ 'pdfdvi'           : '-pdfdvi',
+        \ 'pdfps'            : '-pdfps',
+        \ 'pdflatex'         : '-pdf',
+        \ 'luatex'           : '-lualatex',
+        \ 'lualatex'         : '-lualatex',
+        \ 'xelatex'          : '-xelatex',
+        \ 'context (pdftex)' : '-pdf -pdflatex=texexec',
+        \ 'context (luatex)' : '-pdf -pdflatex=context',
+        \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
+        \}
+
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.config/nvim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -85,7 +102,7 @@ endif
 call plug#begin()
     
     Plug 'gregjurman/vim-nc'
-    Plug 'vim-latex/vim-latex'
+    " Plug 'vim-latex/vim-latex'
     Plug 'vim-python/python-syntax'
     "Plug 'tbastos/vim-lua'
 
@@ -112,9 +129,18 @@ call plug#begin()
     Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
+    " Plug 'Shougo/ddc.vim'
+    " Plug 'vim-denops/denops.vim'
+    " Plug 'Shougo/ddc-ui-native'
+    " Plug 'Shougo/ddc-source-around'
+    " Plug 'Shougo/ddc-matcher_head'
+    " Plug 'Shougo/ddc-sorter_rank'
+
+    Plug 'lervag/vimtex'
+
 call plug#end()
 
 "industry-nvim is my custom thing based on the vim9 one
