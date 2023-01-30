@@ -1,1 +1,1 @@
-{"bitrate":6000}
+{"bitrate":6000,"compliance-mode":"strict","device":"pci-0000:03:00.0-render","keyframe-period":0,"mbbrc":"auto","prediction-type":"default","qos":true,"rate-control":"cbr","tune":"none"}

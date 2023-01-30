@@ -1,1 +1,1 @@
-{"bitrate":20000}
+{"bitrate":20000,"device":"pci-0000:03:00.0-render","keyframe-period":0,"max-bframes":5,"mbbrc":"auto","rate-control":"cbr","tune":"none"}
