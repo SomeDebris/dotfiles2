@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
+    position bottom
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
@@ -213,5 +213,12 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+input type:keyboard {
+    repeat_delay 250
+    repeat_rate 25
+}
+
+output "*" bg "/home/magnus/Pictures/Season 2 Chapter 1 The Troll Circle - File 1.png" fill
 
 include /etc/sway/config.d/*
